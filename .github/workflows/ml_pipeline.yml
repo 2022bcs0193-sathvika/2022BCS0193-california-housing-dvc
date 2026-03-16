@@ -38,7 +38,7 @@ jobs:
       run: docker build -t 2022bcs0193sathvika/housing .
 
     - name: Login DockerHub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u 2022bcs0193sathvika --password-Sath@2003
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u 2022bcs0193sathvika --password-stdin
 
     - name: Push Docker image
       run: docker push 2022bcs0193sathvika/housing
