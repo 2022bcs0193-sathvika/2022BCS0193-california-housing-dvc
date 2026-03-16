@@ -35,10 +35,10 @@ jobs:
         path: metrics.json
 
     - name: Build Docker Image
-      run: docker build -t 2022bcs0025pranathi/housing .
+      run: docker build -t 2022bcs0193sathvika/housing .
 
     - name: Login DockerHub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u 2022bcs0025pranathi --password-stdin
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u 2022bcs0193sathvika --password-Sath@2003
 
     - name: Push Docker image
-      run: docker push 2022bcs0025pranathi/housing
+      run: docker push 2022bcs0193sathvika/housing
